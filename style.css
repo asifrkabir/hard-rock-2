@@ -20,7 +20,7 @@ body{
     
     body{
         background-image: url('images/bg.jpg');
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-size: 100%;
     }
 
