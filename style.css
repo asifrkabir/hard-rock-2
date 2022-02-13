@@ -3,11 +3,16 @@
 body{
     background-color: #13141b;
     color: #ffffff;
-    background-image: url('images/bg-image.png');
+    /* background-image: url('images/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top; */
+    /* background-attachment: fixed; */
+    background-image: url('images/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -30,9 +35,30 @@ main{
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
 }
+
 .navbar-toggler {
     border: none;
 }
+
+.navbar-brand img{
+    width: 20%;
+    margin-right: 10px;
+}
+
+#search-field{
+    background-color: rgba(143, 186, 255, 0.192);
+    outline: none;
+}
+
+#search-field::placeholder{
+    color: #fff;
+}
+
+#search-field:focus{
+    background-color: #fff;
+    outline: none;
+}
+
 .search-box{
     position: relative;
 }
@@ -42,9 +68,25 @@ main{
     right: 0;
     height: 100%;
 }
+
+.blue-btn{
+    background-color: rgb(55, 101, 209);
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.blue-btn:hover{
+    background-color: rgb(55, 101, 209);
+}
+
 .single-result{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.102);
     border-radius: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.single-result:hover{
+    background: rgba(255, 255, 255, 0.198);
 }
 
 #song-container img{
