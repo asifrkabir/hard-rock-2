@@ -38,7 +38,7 @@ const displaySongs = songs => {
                     <source src="${song.preview}" type="audio/mpeg">
                 </audio>
             </div>
-            <div class="col-md-3 text-md-right text-center">
+            <div class="col-md-3 text-md-right text-center mt-4">
                 <button onclick="getLyric('${song.artist.name}', '${song.title}')" class="btn blue-btn">Get Lyrics</button>
             </div>
             `;
