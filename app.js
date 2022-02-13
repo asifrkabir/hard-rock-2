@@ -64,7 +64,11 @@ const getLyric = async (artist, title) => {
         const data = await res.json();
         displayLyrics(data.lyrics, artist, title);
     } catch (error) {
+        document.getElementById('lyrics-section').innerHTML = '';
+        document.getElementById('song-lyrics').innerHTML = '';
         displayError('Sorry! Failed to load lyrics! Please try again later!');
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 }
 
