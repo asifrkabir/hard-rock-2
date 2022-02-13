@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html{
+    height: 100%; 
+    overflow: hidden;
+}
+
 body{
     background-color: #13141b;
     color: #ffffff;
@@ -9,14 +14,16 @@ body{
     background-position: top; */
     /* background-attachment: fixed; */
     background-image: url('images/bg.jpg');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    /* background-position: top; */
-    background-attachment: fixed;
+    background-position: center center;
+    /* background-attachment: fixed; */
     font-family: 'Poppins', sans-serif;
+    height:100%;
+    overflow: scroll;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     
     body{
         background-image: url('images/bg.jpg');
@@ -24,7 +31,7 @@ body{
         background-size: cover;
     }
 
-}
+} */
 
 main{
     min-height: 85vh;
@@ -114,4 +121,5 @@ main{
 .lyrics-container{
     background: rgba(255, 255, 255, 0.102);
     border-radius: 15px;
+    width: 50%;
 }
