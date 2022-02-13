@@ -39,7 +39,7 @@ const displaySongs = songs => {
                 </audio>
             </div>
             <div class="col-md-3 text-md-right text-center">
-                <button onclick="getLyric('${song.artist.name}', '${song.title}')" class="btn btn-success blue-btn">Get Lyrics</button>
+                <button onclick="getLyric('${song.artist.name}', '${song.title}')" class="btn blue-btn">Get Lyrics</button>
             </div>
             `;
             songContainer.appendChild(songDiv);
