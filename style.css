@@ -21,7 +21,7 @@ body{
     body{
         background-image: url('images/bg.jpg');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
     }
 
 }
@@ -109,4 +109,9 @@ main{
 
 #song-container audio{
     display: block;
+}
+
+.lyrics-container{
+    background: rgba(255, 255, 255, 0.102);
+    border-radius: 15px;
 }
