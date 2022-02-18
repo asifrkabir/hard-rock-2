@@ -13,6 +13,8 @@ const searchSong = async () => {
         .then(res => res.json())
         .then(data => displaySongs(data.data))
         .catch(error => displayError('Something went wrong! Please try again later!'));
+
+    toggleSpinner();
 }
 
 const displaySongs = songs => {
@@ -47,6 +49,8 @@ const displaySongs = songs => {
 
         setVolumeTo10Percent();
     }
+
+    toggleSpinner();
 }
 
 // const getLyric = (artist, title) => {
@@ -87,6 +91,7 @@ const displayLyrics = (lyrics, artist, title) => {
         h1.innerText = title;
         const h4 = document.createElement('h4');
         h4.innerText = `by ${artist}`;
+        lyricsSection.appendChild(document.createElement('br'));
         lyricsSection.appendChild(h1);
         lyricsSection.appendChild(h4);
 
@@ -134,3 +139,8 @@ const triggerSlash = () => {
 
 triggerEnter();
 triggerSlash();
+
+const toggleSpinner = () => {
+    const spinner = document.getElementById('loading-spinner');
+    spinner.classList.toggle('d-none');
+}

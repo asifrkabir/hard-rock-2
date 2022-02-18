@@ -70,7 +70,7 @@ main{
 }
 
 .blue-btn{
-    background-color: rgb(55, 101, 209);
+    background-image: linear-gradient(45deg, rgb(66, 131, 175), rgb(26, 77, 158));
     color: #fff;
     border: none;
     transition: background-color 0.3s ease-in-out;
@@ -84,13 +84,13 @@ main{
 }
 
 .single-result{
-    background: rgba(143, 186, 255, 0.192);
+    background: rgba(70, 127, 219, 0.192);
     border-radius: 15px;
     transition: background 0.3s ease-in-out;
 }
 
 .single-result:hover{
-    background: rgba(143, 186, 255, 0.322);
+    background: rgba(102, 160, 253, 0.192);
 }
 
 #song-container img{
@@ -102,7 +102,7 @@ main{
 }
 
 .lyrics-container{
-    background: rgba(143, 186, 255, 0.616);
+    background: rgba(70, 127, 219, 0.192);
     border-radius: 15px;
     width: 50%;
 }
